@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom"
-import Contacts from "./containers/Contacts";
-import MapsAndChart from "./containers/MapsAndChart";
-import EditCamp from "./components/EditCamp";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Page1 from "./containers/Page1";
+import Page3 from "./containers/Page3";
+import ChatbotPage from "./components/ChatbotPage";
+import "./App.css";
 
 
 
@@ -11,9 +12,9 @@ function App() {
   return (
     <>
       <Router>
-        <Route path="/" component={Contacts} exact />
-        <Route path="/mapandchart" component={MapsAndChart} />
-        <Route path="/edit/:id" component={EditCamp} />
+        <Route path="/" component={Page1} exact />
+        <Route path="/chat" component={ChatbotPage} />
+        <Route path="/page3" component={Page3} />
       </Router>
     </>
 
