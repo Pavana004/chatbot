@@ -1,0 +1,22 @@
+.react-chatbot-kit-chat-container {
+    position: relative;
+    margin-top: 20%;
+    width: 300px;
+
+}
+
+.react-chatbot-kit-chat-inner-container {
+    height: 500px;
+    border-radius: 5px;
+  
+}
+
+.react-chatbot-kit-chat-input {
+    width: 100%;
+    padding: 12.5px;
+    border: none;
+    font-size: 0.85rem;
+    border-top: 1px solid #d8d8d8;
+    border-bottom-left-radius: 5px;
+    outline-style: none;
+}
