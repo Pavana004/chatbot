@@ -4,8 +4,7 @@ import { setName } from '../redux/contactSlice';
 
 const MessageParser = ({ children, actions }) => {
 
-  const dispatch = useDispatch()
-  console.log(children)
+  const dispatch = useDispatch();
 
 
   const parse = (message) => {

@@ -1,6 +1,8 @@
 import React from 'react';
 
-const ActionProvider = ({ createChatBotMessage, setState, children }) => {
+
+const ActionProvider = ({ createChatBotMessage, setState, children}) => {
+
 
   const handleGotIt = () => {
     const StartMessage = createChatBotMessage('got it', {
@@ -15,9 +17,10 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
 
   const handleAge = () => {
     const StartMessage = createChatBotMessage('Enter Your Age', {
-      widget: 'dropdown',
+      widget: 'dropdown'
     });
-    updateState(StartMessage, "count");
+    updateState(StartMessage,"count");
+   
   };
 
   const handleCount = () => {
